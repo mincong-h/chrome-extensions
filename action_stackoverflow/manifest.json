@@ -1,0 +1,14 @@
+{
+  "name": "Stack Overflow Question Helper",
+  "description": "Open questions with different tag combinations in seperate pages.",
+  "version": "0.1",
+  "incognito": "split",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": "so-icon.png",
+    "default_title": "Open questions"
+  },
+  "manifest_version": 2
+}
