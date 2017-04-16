@@ -1,4 +1,4 @@
-function yesterday() {
+function toFrench(date) {
   var months = [
     'janvier',
     'fevrier',
@@ -13,12 +13,29 @@ function yesterday() {
     'novembre',
     'decembre'
   ];
-  var d = new Date(Date.now() - 86400000); // yesterday
-  return d.getDate() + '-' + months[d.getMonth()] + '-' + d.getFullYear();
+  return date.getDate() + '-' + months[date.getMonth()] + '-' + date.getFullYear();
 }
+
+function isWeekend(date) {
+  switch(date.getDay()) {
+    case 0: return true; // Sunday
+    case 5: return true; // Friday
+    case 6: return true; // Saturday
+  }
+  return false;
+}
+
 chrome.browserAction.onClicked.addListener(function(tab) {
-  // URL example: 'https://www.tf1.fr/tf1/jt-20h/videos/20-heures-12-avril-2017.html'
-  var url = 'https://www.tf1.fr/tf1/jt-20h/videos/20-heures-' + yesterday() + '.html';
+  // URL examples
+  // JT-20H (Mon - Tue): 'https://www.tf1.fr/tf1/jt-20h/videos/20-heures-12-avril-2017.html'
+  // JT-WE  (Fri - Sun): 'https://www.tf1.fr/tf1/jt-we/videos/20-heures-14-avril-2017.html'
+  var d = new Date(Date.now() - 86400000); // yesterday
+  var url;
+  if (isWeekend(d)) {
+    url = 'https://www.tf1.fr/tf1/jt-we/videos/20-heures-' + toFrench(d) + '.html';
+  } else {
+    url = 'https://www.tf1.fr/tf1/jt-20h/videos/20-heures-' + toFrench(d) + '.html';
+  }
   window.open(url);
   chrome.tabs.update(tab.id, {selected: true});
 });
