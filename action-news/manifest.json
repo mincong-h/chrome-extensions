@@ -1,0 +1,14 @@
+{
+  "name": "TF1 News Helper",
+  "description": "Open yesterday's TF1 news « 20 Heures » in one click.",
+  "version": "1.0",
+  "incognito": "split",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": "tf1-icon.png",
+    "default_title": "Open « 20 Heures »"
+  },
+  "manifest_version": 2
+}
