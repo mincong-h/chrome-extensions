@@ -39,5 +39,4 @@ chrome.browserAction.onClicked.addListener(function(tab) {
     url = 'https://www.tf1.fr/tf1/jt-20h/videos/20-heures-' + toFrench(d) + '.html';
   }
   window.open(url);
-  chrome.tabs.update(tab.id, {selected: true});
 });
