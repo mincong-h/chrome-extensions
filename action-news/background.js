@@ -25,10 +25,12 @@ function isWeekend(date) {
   return false;
 }
 
+/**
+ * URL Examples:
+ * - JT-20H (Mon - Tue): 'https://www.tf1.fr/tf1/jt-20h/videos/20-heures-12-avril-2017.html'
+ * - JT-WE  (Fri - Sun): 'https://www.tf1.fr/tf1/jt-we/videos/20-heures-14-avril-2017.html'
+ */
 chrome.browserAction.onClicked.addListener(function(tab) {
-  // URL examples
-  // JT-20H (Mon - Tue): 'https://www.tf1.fr/tf1/jt-20h/videos/20-heures-12-avril-2017.html'
-  // JT-WE  (Fri - Sun): 'https://www.tf1.fr/tf1/jt-we/videos/20-heures-14-avril-2017.html'
   var d = new Date(Date.now() - 86400000); // yesterday
   var url;
   if (isWeekend(d)) {
