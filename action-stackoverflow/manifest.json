@@ -10,5 +10,8 @@
     "default_icon": "so-icon.png",
     "default_title": "Open questions"
   },
+  "icons": {
+    "110": "so-icon.png"
+  },
   "manifest_version": 2
 }
