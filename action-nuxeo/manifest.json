@@ -10,5 +10,8 @@
     "default_icon": "nuxeo-icon.png",
     "default_title": "Open Nuxeo tabs"
   },
+  "icons": {
+    "50": "nuxeo-icon.png"
+  },
   "manifest_version": 2
 }

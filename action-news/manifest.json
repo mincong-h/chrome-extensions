@@ -10,5 +10,8 @@
     "default_icon": "tf1-icon.png",
     "default_title": "Open « 20 Heures »"
   },
+  "icons": {
+    "128": "tf1-icon.png"
+  },
   "manifest_version": 2
 }
