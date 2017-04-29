@@ -8,7 +8,8 @@
   },
   "manifest_version": 2,
   "permissions": [
-    "bookmarks"
+    "bookmarks",
+    "https://www.nasa.gov/"
   ],
-  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com https://www.nasa.gov/; object-src 'self'"
 }
