@@ -12,11 +12,19 @@ $(function() {
 function parseFeed(url) {
   $.get(url, function(xml) {
     var node = $(xml).find('item:first');
+    var title = node.find('title').text();
+    var pubDate = node.find('pubDate').text();
+    var imageUrl = node.find('enclosure').attr('url');
 
     console.log('------------------------');
-    console.log('title      : ' + node.find('title').text());
-    console.log('pubDate    : ' + node.find('pubDate').text());
-    console.log('imageSrc   : ' + node.find('enclosure').attr('url'));
+    console.log('title      : ' + title);
+    console.log('pubDate    : ' + pubDate);
+    console.log('imageUrl   : ' + imageUrl);
     console.log('------------------------');
+
+    // Render HTML
+    $('#nasa-title').html(title);
+    $('#nasa-copyright').html(pubDate + ' &copy; NASA');
+    $('html').css('background-image', 'url(' + imageUrl + ')');
   });
 }
