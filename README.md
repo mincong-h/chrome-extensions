@@ -8,4 +8,3 @@ Customized Google Chrome Extensions to make life easier.
   work at Nuxeo.
 - **action-stackoverflow** is an extension to open all the questions that I'm
   interested on Stack Overflow.
-- **newtab** is an extension that overrides the default newtab extention.
