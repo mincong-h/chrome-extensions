@@ -1,7 +1,7 @@
 {
   "name": "Stack Overflow Question Helper",
   "description": "Open questions with different tag combinations in seperate pages.",
-  "version": "0.1",
+  "version": "1.0.0",
   "incognito": "split",
   "background": {
     "scripts": ["background.js"]
