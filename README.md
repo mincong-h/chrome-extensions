@@ -8,3 +8,7 @@ Customized Google Chrome Extensions to make life easier.
   work at Nuxeo.
 - **action-stackoverflow** is an extension to open all the questions that I'm
   interested on Stack Overflow.
+
+## Installation
+
+See <https://developer.chrome.com/extensions/getstarted#unpacked>.
