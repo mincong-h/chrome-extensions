@@ -15,7 +15,6 @@ function removeNode(node) {
 function removeByClassName(className) {
   var elements = document.getElementsByClassName(className);
   for (var element of elements) {
-    // element.style.display = 'none';
     removeNode(element);
   }
 }
@@ -34,7 +33,6 @@ function removeByTagName(tagName, attrName, attrValue) {
     if (attrName) {
       if (element.hasAttribute(attrName)
           && element.getAttribute(attrName).includes(attrValue)) {
-        // element.style.display = 'none';
         removeNode(element);
       }
     } else {

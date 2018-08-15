@@ -2,7 +2,7 @@
 
 Customized Google Chrome Extensions to make life easier.
 
-- **action-ads-remove** is an extension to remove ads in the current tab.
+- **action-ads-eraser** is an extension to erase ads from the current tab.
 - **action-news** is an extension to see yesterday's news « 20 Heures » on
   <https://www.tf1.fr>.
 - **action-nuxeo** is an extension to open all the important tabs for my daily
