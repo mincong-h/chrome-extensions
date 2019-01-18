@@ -1,9 +1,10 @@
 // Called when the user clicks on the browser action.
 chrome.browserAction.onClicked.addListener(function(tab) {
-  var urls = [
+  const urls = [
     'https://nuxeo.slack.com',
     'https://github.com/notifications',
-    'https://mail.google.com/mail/u/0/'
+    'https://mail.google.com/mail/u/0/',
+    'https://qa.nuxeo.org/jenkins/securityRealm/commenceLogin?from=%2Fjenkins%2F'
   ];
   urls.forEach(function(url) {
     window.open(url);
