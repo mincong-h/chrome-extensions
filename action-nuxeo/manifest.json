@@ -1,7 +1,7 @@
 {
   "name": "Nuxeo Developer",
   "description": "Open Nuxeo tabs in one click.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "incognito": "split",
   "background": {
     "scripts": ["background.js"]
